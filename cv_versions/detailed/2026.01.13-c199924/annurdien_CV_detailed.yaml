@@ -1,0 +1,275 @@
+cv:
+  name: Annurdien Rasyid
+  label: iOS Engineer & Mobile Developer
+  location: Jakarta, Indonesia
+  email: annurdien@gmail.com
+  website: https://rasyid.codes
+  social_networks:
+    - network:  LinkedIn
+      username: annurdien
+    - network: GitHub
+      username: annurdien
+    - network: ResearchGate
+      username:  Annurdien-Rasyid
+
+  sections: 
+    Summary:
+      - "iOS Engineer with 2 years of native Swift development experience and a strong foundation in mobile architecture. Specialized in building scalable applications using Swift, UIKit, and SwiftUI with expertise in reactive programming patterns, state management, and complex API integrations.  Published researcher in location-based services and construction safety technology.  Proven track record of optimizing performance and delivering robust solutions across banking, consumer, and government sectors, serving 100,000+ users."
+
+    Experience:
+      - company:  NBS
+        position: iOS Software Engineer
+        location: Jakarta, Indonesia
+        start_date: 2025-01
+        end_date: present
+        highlights: 
+          - 'Developed and maintained enterprise banking application serving 100,000+ active users with high security and compliance standards'
+          - 'Led iOS app delivery and release management, ensuring high-quality production deployments with zero critical incidents'
+          - 'Architected and maintained robust CI/CD pipeline with 4 environment configurations (Development, QA, Staging, Production) to streamline development lifecycle and reduce deployment time by 60%'
+          - 'Implemented comprehensive automated testing strategy (unit, integration, and UI tests) ensuring 85%+ code coverage'
+          - 'Collaborated with backend and QA teams to ensure seamless API integration and optimal user experience'
+
+      - company:  Apple Developer Academy
+        position: iOS Developer (Intern)
+        location: Batam, Indonesia
+        start_date: 2024-03
+        end_date: 2024-12
+        highlights: 
+          - 'Developed and launched Kagibari, a crocheting pattern app with thousands of active users on the App Store, achieving 4.8+ star rating'
+          - 'Led development team of 5 members, establishing coding standards, architectural patterns, and Git workflow best practices'
+          - 'Designed and implemented comprehensive design system using SwiftUI, ensuring UI consistency and reducing development time by 30%'
+          - 'Created CROML (Crochet Markup Language), a domain-specific language improving LLM-based pattern generation efficiency by 80%'
+          - 'Integrated Core Data for offline-first architecture and CloudKit for seamless cross-device synchronization'
+          - 'Implemented advanced SwiftUI animations and transitions, enhancing user engagement metrics by 25%'
+          - 'Conducted code reviews and mentored junior developers on Swift best practices and iOS design patterns'
+
+      - company:  Rectmedia
+        position: Mobile Engineer
+        location: Semarang, Indonesia
+        start_date: 2023-09
+        end_date: 2024-02
+        highlights:
+          - 'Refactored legacy online booking system using Flutter, improving app performance by 40% through code optimization, lazy loading, and efficient state management'
+          - 'Contributed to multiple client applications including online booking platforms, event ticketing systems, and CRM solutions serving 50,000+ combined users'
+          - 'Implemented modern architecture patterns (MVVM, Clean Architecture, Repository Pattern) for maintainable and scalable codebases'
+          - 'Integrated RESTful APIs and implemented proper error handling, retry mechanisms, and offline data caching'
+          - 'Collaborated with cross-functional teams (designers, backend developers, QA) to deliver features on schedule with 95% on-time delivery rate'
+          - 'Optimized app size by 35% through code splitting and asset optimization techniques'
+
+      - company:  Arkabyte
+        position:  Mobile Engineer
+        location: Yogyakarta, Indonesia
+        start_date: 2022-06
+        end_date: 2023-09
+        highlights: 
+          - 'Sole mobile developer responsible for end-to-end development of 5+ government applications using Flutter'
+          - 'Made critical architectural decisions, selecting appropriate design patterns, state management solutions (BLoC, Provider), and technology stack'
+          - 'Established and maintained CI/CD pipeline using Fastlane and GitHub Actions, automating builds, testing, and deployments reducing release time from 2 days to 4 hours'
+          - 'Delivered production applications for government clients on time and within budget with 100% client satisfaction rate'
+          - 'Implemented secure authentication (OAuth 2.0, JWT) and data handling complying with Indonesian government security standards and regulations'
+          - 'Created comprehensive technical documentation and user manuals for knowledge transfer'
+          - 'Provided post-launch support and maintenance, handling bug fixes and feature enhancements'
+
+      - company: Divistant
+        position: Mobile Engineer (Contract)
+        location: Jakarta, Indonesia
+        start_date: 2022-10
+        end_date:  2023-01
+        highlights:
+          - 'Developed Valida. id, a digital signature mobile application for both iOS and Android using Flutter with 10,000+ downloads'
+          - 'Implemented secure cryptographic operations for digital signature generation and verification using RSA and AES encryption'
+          - 'Integrated biometric authentication (Face ID/Touch ID for iOS, Fingerprint for Android) for enhanced security'
+          - 'Managed complete App Store and Play Store submission process, ensuring compliance with platform guidelines and security requirements'
+          - 'Collaborated with backend team to implement secure API communication using SSL pinning and certificate validation'
+          - 'Optimized app security scoring to pass penetration testing requirements'
+
+      - company: Frday. id
+        position: Mobile Engineer
+        location: Jakarta, Indonesia
+        start_date: 2022-02
+        end_date: 2022-06
+        highlights: 
+          - 'Contributed to Frday SuperApp, an accommodation booking platform startup, developing features for iOS and Android serving 15,000+ users'
+          - 'Built responsive UI components using Flutter, ensuring consistent user experience across platforms with pixel-perfect implementation'
+          - 'Implemented and maintained CI/CD pipelines using Codemagic and Firebase App Distribution, reducing release cycle from 3 days to 6 hours'
+          - 'Managed bi-weekly releases to App Store and Play Store with zero critical post-release issues through comprehensive QA process'
+          - 'Integrated payment gateways (Midtrans, Xendit) and booking APIs with proper error handling and retry mechanisms'
+          - 'Implemented push notifications using Firebase Cloud Messaging for booking confirmations and promotional campaigns'
+          - 'Optimized API calls and implemented caching strategies, reducing data consumption by 45%'
+
+    Education:
+      - institution: Yogyakarta State University
+        area: Computer Engineering
+        degree:  Bachelor of Computer Engineering
+        start_date: 2019-08
+        end_date: 2023-07
+        location: Yogyakarta, Indonesia
+        highlights:
+          - 'GPA: 3.87/4.0 - Magna Cum Laude'
+          - 'Relevant coursework:  Data Structures & Algorithms, Mobile Application Development, Software Engineering, Database Systems, Computer Networks, Operating Systems, Artificial Intelligence'
+          - 'Thesis: "Portable Construction Maps (PCM) using Location Fingerprint Positioning Algorithm for Construction Worker Safety"'
+          - 'Teaching Assistant for Mobile Programming course (2021-2022)'
+          - 'Member of Computer Engineering Student Association'
+
+    Publications:
+      - title: "Portable Construction Maps (PCM) using location fingerprint positioning algorithm for construction worker safety"
+        authors: [Annurdien Rasyid, Totok Sukardiyono, Herman Dwi Surjono]
+        journal: "AIP Conference Proceedings"
+        date: 2022-06-08
+        doi: "10.1063/5.0093992"
+        highlights:
+          - 'Presented at the 7th International Conference on Science and Technology (ICST) 2021'
+          - 'Developed novel indoor positioning system using Wi-Fi fingerprinting for construction site safety'
+          - 'Achieved 92% accuracy in location detection within construction environments'
+          - 'Implemented mobile application prototype demonstrating real-time worker location tracking'
+        url: https://www.researchgate.net/publication/361090012_Portable_Construction_Maps_PCM_using_location_fingerprint_positioning_algorithm_for_construction_worker_safety
+
+    Projects:
+      - name:  Kagibari - Crochet Pattern App
+        date: 2024-03 - 2024-12
+        highlights:
+          - 'iOS app for crochet pattern creation, management, and sharing with thousands of active users'
+          - 'Built using SwiftUI, Combine, Core Data, and CloudKit for seamless offline and cross-device experience'
+          - 'Featured CROML parser and interpreter for efficient pattern reading and generation'
+          - 'Implemented AI-powered pattern suggestions using OpenAI API integration'
+          - 'Designed custom UI components and animations for intuitive pattern visualization'
+          - 'Technologies: Swift, SwiftUI, Core Data, CloudKit, Combine, OpenAI API'
+        url: https://apps.apple.com/app/kagibari
+
+      - name:  Valida.id - Digital Signature App
+        date: 2022-10 - 2023-01
+        highlights:
+          - 'Cross-platform digital signature application with 10,000+ downloads on App Store and Play Store'
+          - 'Implemented secure document signing with RSA/AES encryption and biometric authentication'
+          - 'Built compliance features for Indonesian legal digital signature standards'
+          - 'Technologies: Flutter, Dart, Cryptography, Biometric APIs, REST APIs'
+        url: https://valida.id
+
+      - name: Open Source Contributions
+        date: 2022 - present
+        highlights:
+          - 'Active contributor to iOS and Flutter open source projects on GitHub'
+          - 'Created and maintained utility libraries for common mobile development patterns'
+          - 'Contributed bug fixes and features to popular Swift and Dart packages'
+          - 'Shared code snippets and solutions through personal blog and GitHub Gists'
+        url: https://github.com/annurdien
+
+      - name:  Personal Portfolio & Technical Blog
+        date: 2023 - present
+        highlights: 
+          - 'Technical blog sharing iOS development insights, tutorials, and best practices'
+          - 'Articles covering SwiftUI, UIKit, Combine, mobile architecture, and performance optimization'
+          - '1,000+ monthly readers from developer community'
+          - 'Built with Next.js, TypeScript, and Tailwind CSS, deployed on Vercel'
+        url: https://rasyid.codes
+
+      - name: Construction Safety Monitoring System (Research Project)
+        date: 2021-09 - 2022-06
+        highlights:
+          - 'Developed indoor positioning system for construction worker safety using Wi-Fi fingerprinting'
+          - 'Created mobile application for real-time location tracking and hazard alerts'
+          - 'Achieved 92% accuracy in location detection within construction site environments'
+          - 'Technologies: Android, Java, Wi-Fi APIs, Machine Learning, Firebase'
+
+    Skills:
+      - label: iOS Development
+        details: Swift, Objective-C, SwiftUI, UIKit, Combine, Core Data, CloudKit, URLSession, Concurrency (async/await), Core Animation, Core Graphics
+
+      - label: iOS Frameworks & APIs
+        details: StoreKit, HealthKit, MapKit, CoreLocation, AVFoundation, Vision, Core ML, ARKit, WidgetKit, App Clips, Push Notifications
+
+      - label: Cross-Platform Development
+        details: Flutter, Dart, BLoC Pattern, Provider, GetX, Riverpod, Flutter Hooks
+
+      - label: Architecture & Design Patterns
+        details: MVVM, Clean Architecture, VIPER, MVC, Repository Pattern, Coordinator Pattern, Dependency Injection, SOLID Principles
+
+      - label:  State Management
+        details:  Combine, SwiftUI State, BLoC, Provider, Redux, MVI
+
+      - label: Programming Languages
+        details: Swift, Objective-C, Dart, JavaScript, TypeScript, Python, Java, C, C++, Rust
+
+      - label: Testing
+        details: XCTest, XCUITest, Unit Testing, Integration Testing, UI Testing, Test-Driven Development (TDD), Quick/Nimble, Snapshot Testing
+
+      - label: Version Control & CI/CD
+        details: Git, GitHub, GitLab, Bitbucket, GitHub Actions, Fastlane, Codemagic, Firebase App Distribution, TestFlight, App Store Connect
+
+      - label: Development Tools
+        details: Xcode, Instruments, LLDB, CocoaPods, Swift Package Manager (SPM), Carthage, Charles Proxy, Postman, Visual Studio Code
+
+      - label: Backend & APIs
+        details: REST APIs, GraphQL, JSON, Alamofire, URLSession, WebSockets, Firebase, Supabase
+
+      - label: Database
+        details: Core Data, Realm, SQLite, Firebase Firestore, PostgreSQL, MySQL
+
+      - label: Cloud & DevOps
+        details: Firebase (Auth, Firestore, Storage, Analytics, Crashlytics), Google Cloud Platform, AWS (S3, Lambda), Docker, Kubernetes, Vercel, Cloudflare
+
+      - label: Design & UI/UX
+        details: Figma, Sketch, Adobe XD, Auto Layout, Responsive Design, Accessibility (VoiceOver), Dark Mode
+
+      - label: Other Technologies
+        details: Node.js, Express, Next.js, React, WebRTC, Socket.io, Machine Learning (Core ML, TensorFlow Lite)
+
+      - label: Soft Skills
+        details: Team Leadership, Code Review, Mentoring, Agile/Scrum, Technical Documentation, Problem Solving, Cross-functional Collaboration
+
+    Certifications: 
+      - label: Apple Developer Academy Graduate
+        details: 2024-12 - Completed intensive 10-month program focused on iOS development, design thinking, and entrepreneurship
+
+      - label: AWS Certified Cloud Practitioner
+        details: 2023-08 - Foundational understanding of AWS Cloud services and architecture
+
+      - label: Google Associate Android Developer (Flutter Track)
+        details: 2022-11 - Demonstrated proficiency in building and deploying Android applications using Flutter
+
+    Honors & Awards:
+      - 'Magna Cum Laude - Bachelor of Computer Engineering (GPA: 3.87/4.0) - 2023'
+      - 'Best Presenter Award - 7th International Conference on Science and Technology (ICST) 2021'
+      - 'Dean''s List - Yogyakarta State University (2019-2023)'
+      - 'Apple Developer Academy Scholarship Recipient - 2024'
+
+    Languages:
+      - label: Indonesian
+        details: Native
+      - label: English
+        details:  Professional Working Proficiency
+      - label: Japanese
+        details: Basic (JLPT N5 equivalent)
+
+    Volunteer Experience:
+      - company: iOS Developer Community Indonesia
+        position: Community Member & Speaker
+        location: Remote
+        start_date: 2023-01
+        end_date: present
+        highlights:
+          - 'Active member sharing knowledge and helping fellow iOS developers'
+          - 'Conducted workshops on SwiftUI and modern iOS development practices'
+
+      - company: Yogyakarta State University
+        position: Teaching Assistant - Mobile Programming
+        location: Yogyakarta, Indonesia
+        start_date: 2021-09
+        end_date: 2022-06
+        highlights:
+          - 'Assisted professor in teaching Android and iOS development to 60+ students'
+          - 'Provided mentoring and code review for student projects'
+
+design:
+  theme: engineeringresumes
+  page: 
+    size: us-letter
+    show_footer: true
+  colors:
+    name: rgb(0, 79, 144)
+    section_titles: rgb(0, 79, 144)
+    links: rgb(0, 79, 144)
+    connections: rgb(100, 100, 100)
+  typography:
+    font_family: Source Sans 3
+    alignment: justified
