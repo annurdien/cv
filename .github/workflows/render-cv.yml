@@ -5,9 +5,9 @@ on:
     branches: 
       - main
     paths: 
-      - '**. yaml'
+      - '**.yaml'
       - '**.yml'
-      - '. github/workflows/render-cv. yml'
+      - '.github/workflows/render-cv.yml'
   pull_request:  
     branches: 
       - main
@@ -46,7 +46,7 @@ jobs:
         id: get-cv
         run: |
           # Find the CV YAML file based on matrix type
-          CV_FILE=$(find . -maxdepth 1 -iname "*_CV_${{ matrix.cv_type }}. yaml" -o -iname "*_CV_${{ matrix.cv_type }}. yml" | head -n 1)
+          CV_FILE=$(find . -maxdepth 1 -iname "*_CV_${{ matrix.cv_type }}.yaml" -o -iname "*_CV_${{ matrix.cv_type }}.yml" | head -n 1)
           
           if [ -z "$CV_FILE" ]; then
             echo "No ${{ matrix.cv_type }} CV file found!  Please name your file as Name_CV_${{ matrix.cv_type }}.yaml"
@@ -58,7 +58,7 @@ jobs:
           
           # Extract base name without extension and path
           BASENAME=$(basename "$CV_FILE" .yaml)
-          BASENAME=$(basename "$BASENAME" . yml)
+          BASENAME=$(basename "$BASENAME" .yml)
           echo "basename=$BASENAME" >> $GITHUB_OUTPUT
       
       - name: Generate version number
@@ -112,10 +112,10 @@ jobs:
           cp "$PDF_FILE" "cv_versions/${{ matrix.cv_type }}/${{ steps.version.outputs.version }}/${BASENAME}_${{ steps.version.outputs.version }}.pdf"
           
           # Also create a "latest" copy
-          cp "$PDF_FILE" "cv_versions/${{ matrix. cv_type }}/${BASENAME}_latest.pdf"
+          cp "$PDF_FILE" "cv_versions/${{ matrix.cv_type }}/${BASENAME}_latest.pdf"
           
           # Copy source file
-          cp "${{ steps.get-cv.outputs. cv_file }}" "cv_versions/${{ matrix.cv_type }}/${{ steps.version.outputs.version }}/"
+          cp "${{ steps.get-cv.outputs.cv_file }}" "cv_versions/${{ matrix.cv_type }}/${{ steps.version.outputs.version }}/"
           
           echo "pdf_file=${BASENAME}_${{ steps.version.outputs.version }}.pdf" >> $GITHUB_OUTPUT
       
@@ -132,7 +132,7 @@ jobs:
         with:
           name:  cv-${{ matrix.cv_type }}-latest
           path: |
-            cv_versions/${{ matrix. cv_type }}/*_latest.pdf
+            cv_versions/${{ matrix.cv_type }}/*_latest.pdf
           retention-days: 365
       
       - name: Upload versioned files for commit
@@ -167,8 +167,8 @@ jobs:
       
       - name: Commit versioned CVs
         run: |
-          git config --local user.email "github-actions[bot]@users. noreply.github.com"
-          git config --local user. name "github-actions[bot]"
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
           
           git add cv_versions/
           
