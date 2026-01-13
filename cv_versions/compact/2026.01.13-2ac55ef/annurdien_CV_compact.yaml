@@ -1,0 +1,141 @@
+cv:
+  name: Annurdien Rasyid
+  label: iOS Engineer
+  location:  Jakarta, Indonesia
+  email: annurdien@gmail.com
+  website: https://rasyid.codes
+  social_networks: 
+    - network: LinkedIn
+      username: annurdien
+    - network: GitHub
+      username: annurdien
+
+  sections:
+    Summary: 
+      - "iOS Engineer with 2 years of native Swift development experience and a strong foundation in mobile architecture. Specialized in building scalable applications using Swift, UIKit, and SwiftUI with expertise in reactive programming patterns, state management, and complex API integrations. Proven track record of optimizing performance and delivering robust solutions across banking, consumer, and government sectors, serving 100,000+ users."
+
+    Experience:
+      - company: NBS
+        position: iOS Software Engineer
+        location: Jakarta, Indonesia
+        start_date: 2025-01
+        end_date: present
+        highlights:
+          - 'Developed and maintained enterprise banking application serving 100,000+ active users'
+          - 'Led iOS app delivery and release management, ensuring high-quality production deployments'
+          - 'Maintained robust CI/CD pipeline with 4 environment configurations (Dev, QA, Staging, Production) to streamline development lifecycle and reduce deployment time'
+          - 'Implemented comprehensive testing strategy ensuring app stability and reliability'
+
+      - company: Apple Developer Academy
+        position: iOS Developer (Intern)
+        location: Batam, Indonesia
+        start_date: 2024-03
+        end_date: 2024-12
+        highlights:
+          - 'Developed and launched Kagibari, a crocheting pattern app with thousands of active users on the App Store'
+          - 'Led development team of 5 members, establishing coding standards and architectural patterns'
+          - 'Designed and implemented comprehensive design system, ensuring UI consistency across the application'
+          - 'Created CROML (Crochet Markup Language), improving LLM-based pattern generation efficiency by 80%'
+          - 'Integrated Core Data for offline-first architecture and CloudKit for cross-device synchronization'
+
+      - company:  Rectmedia
+        position:  Mobile Engineer
+        location: Semarang, Indonesia
+        start_date: 2023-09
+        end_date: 2024-02
+        highlights:
+          - 'Refactored legacy online booking system, improving app performance by 40% through code optimization and architecture improvements'
+          - 'Contributed to multiple client applications including online booking platforms, event ticketing systems, and CRM solutions'
+          - 'Implemented modern architecture patterns (MVVM, Clean Architecture) for maintainable and scalable codebases'
+          - 'Collaborated with cross-functional teams to deliver features on schedule'
+
+      - company: Arkabyte
+        position: Mobile Engineer
+        location: Yogyakarta, Indonesia
+        start_date:  2022-06
+        end_date: 2023-09
+        highlights:
+          - 'Sole mobile developer responsible for end-to-end development of government applications'
+          - 'Made critical architectural decisions, selecting appropriate design patterns and technology stack'
+          - 'Established and maintained CI/CD pipeline using Fastlane and GitHub Actions, automating builds and deployments'
+          - 'Delivered 5+ production applications for government clients on time and within budget'
+          - 'Implemented secure authentication and data handling complying with government security standards'
+
+      - company:  Divistant
+        position: Mobile Engineer (Contract)
+        location: Jakarta, Indonesia
+        start_date: 2022-10
+        end_date: 2023-01
+        highlights:
+          - 'Developed Valida.id, a digital signature mobile application for both iOS and Android using Flutter'
+          - 'Implemented secure cryptographic operations for digital signature generation and verification'
+          - 'Managed complete App Store and Play Store submission process, ensuring compliance with platform guidelines'
+          - 'Integrated biometric authentication (Face ID/Touch ID) for enhanced security'
+
+      - company: Frday. id
+        position: Mobile Engineer
+        location: Jakarta, Indonesia
+        start_date: 2022-02
+        end_date: 2022-06
+        highlights: 
+          - 'Contributed to Frday SuperApp, an accommodation booking platform, developing features for iOS and Android'
+          - 'Built responsive UI components using Flutter, ensuring consistent user experience across platforms'
+          - 'Implemented and maintained CI/CD pipelines using Codemagic, reducing release cycle from days to hours'
+          - 'Managed bi-weekly releases to App Store and Play Store with zero critical post-release issues'
+          - 'Integrated payment gateways and booking APIs with proper error handling and retry mechanisms'
+
+    Education:
+      - institution:  Yogyakarta State University
+        area: Computer Engineering
+        degree: BCE
+        start_date: 2019-08
+        end_date: 2023-07
+        location: Yogyakarta, Indonesia
+        highlights: 
+          - 'GPA: 3.87/4.0'
+          - 'Relevant coursework:  Data Structures & Algorithms, Mobile Application Development, Software Engineering, Database Systems'
+          - 'Thesis: "Optimization of Mobile Application Performance Using Native Technologies"'
+
+    Projects:
+      - name: Kagibari
+        date: 2024-03 - 2024-12
+        highlights: 
+          - 'iOS app for crochet pattern creation and management with thousands of active users'
+          - 'Built using SwiftUI, Core Data, and CloudKit for seamless cross-device experience'
+          - 'Featured CROML parser for efficient pattern interpretation'
+        url: https://apps.apple.com/app/kagibari
+
+      - name: Personal Portfolio & Blog
+        date: 2023 - present
+        highlights:
+          - 'Technical blog sharing iOS development insights and best practices'
+          - 'Built with modern web technologies and deployed on Vercel'
+        url: https://rasyid.codes
+
+    Skills:
+      - label: iOS Development
+        details: Swift, Objective-C, SwiftUI, UIKit, Combine, Core Data, CloudKit, URLSession
+      - label: Cross-Platform
+        details: Flutter, Dart, BLoC Pattern, Provider, GetX
+      - label: Architecture & Patterns
+        details: MVVM, Clean Architecture, VIPER, Repository Pattern, Dependency Injection
+      - label: Other Languages
+        details: Java, JavaScript, Python, C, C++, Rust
+      - label: DevOps & Tools
+        details:  Git, GitHub Actions, Fastlane, Docker, Kubernetes, CI/CD, Xcode, CocoaPods, SPM
+      - label: Cloud & Services
+        details: Firebase, Google Cloud Platform, Vercel, Cloudflare, REST APIs, GraphQL
+      - label: Testing
+        details: XCTest, XCUITest, Unit Testing, UI Testing, Integration Testing
+
+design:
+  theme: classic
+  page:
+    size: us-letter
+    show_footer:  true
+  colors:
+    name: rgb(0, 79, 144)
+    section_titles: rgb(0, 79, 144)
+    links: rgb(0, 79, 144)
+  typography:
+    font_family: Source Sans 3
