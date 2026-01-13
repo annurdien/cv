@@ -95,9 +95,6 @@ jobs:
           
           echo "output_dir=$OUTPUT_DIR" >> $GITHUB_OUTPUT
           
-          # Create versioned directory for this CV type
-          mkdir -p cv_versions/${{ matrix.cv_type }}/${{ steps.version.outputs.version }}
-          
           # Find PDF file
           PDF_FILE=$(find "$OUTPUT_DIR" -name "*.pdf" | head -n 1)
           
@@ -106,109 +103,76 @@ jobs:
             exit 1
           fi
           
-          BASENAME=$(basename "$PDF_FILE" .pdf)
+          # Create release directory
+          mkdir -p release-files
           
-          # Copy PDF with version in filename
-          cp "$PDF_FILE" "cv_versions/${{ matrix.cv_type }}/${{ steps.version.outputs.version }}/${BASENAME}_${{ steps.version.outputs.version }}.pdf"
+          # Copy PDF with descriptive name for release
+          cp "$PDF_FILE" "release-files/Annurdien_Rasyid_CV_${{ matrix.cv_type }}.pdf"
           
-          # Also create a "latest" copy
-          cp "$PDF_FILE" "cv_versions/${{ matrix.cv_type }}/${BASENAME}_latest.pdf"
-          
-          # Copy source file
-          cp "${{ steps.get-cv.outputs.cv_file }}" "cv_versions/${{ matrix.cv_type }}/${{ steps.version.outputs.version }}/"
-          
-          echo "pdf_file=${BASENAME}_${{ steps.version.outputs.version }}.pdf" >> $GITHUB_OUTPUT
+          echo "pdf_file=Annurdien_Rasyid_CV_${{ matrix.cv_type }}.pdf" >> $GITHUB_OUTPUT
       
-      - name: Upload CV as artifact
+      - name: Upload CV for release
         uses:  actions/upload-artifact@v4
         with:
-          name:  cv-${{ matrix.cv_type }}-${{ steps.version.outputs.version }}
-          path: |
-            cv_versions/${{ matrix.cv_type }}/${{ steps.version.outputs.version }}/
-          retention-days: 90
-      
-      - name: Upload latest CV as artifact
-        uses:  actions/upload-artifact@v4
-        with:
-          name:  cv-${{ matrix.cv_type }}-latest
-          path: |
-            cv_versions/${{ matrix.cv_type }}/*_latest.pdf
-          retention-days: 365
-      
-      - name: Upload versioned files for commit
-        uses: actions/upload-artifact@v4
-        with: 
-          name: commit-files-${{ matrix.cv_type }}
-          path: cv_versions/${{ matrix.cv_type }}/
-          retention-days: 1
-
-  commit-versions:
-    runs-on: ubuntu-latest
-    needs: render
-    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
-    
-    steps:
-      - name:  Checkout repository
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-      
-      - name: Download detailed CV files
-        uses: actions/download-artifact@v4
-        with: 
-          name: commit-files-detailed
-          path:  cv_versions/detailed/
-      
-      - name: Download compact CV files
-        uses: actions/download-artifact@v4
-        with:
-          name: commit-files-compact
-          path: cv_versions/compact/
-      
-      - name: Commit versioned CVs
-        run: |
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
-          
-          git add cv_versions/
-          
-          if git diff --staged --quiet; then
-            echo "No changes to commit"
-          else
-            VERSION=$(date +%Y.%m.%d)-$(git rev-parse --short HEAD)
-            git commit -m "🤖 Auto-generate CVs version $VERSION"
-            git push
-          fi
+          name:  cv-${{ matrix.cv_type }}
+          path: release-files/Annurdien_Rasyid_CV_${{ matrix.cv_type }}.pdf
+          retention-days: 7
 
   create-release:
     runs-on: ubuntu-latest
     needs:  render
-    if: startsWith(github.ref, 'refs/tags/v')
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
     
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
       
-      - name: Download all CV artifacts
+      - name: Download detailed CV
         uses: actions/download-artifact@v4
         with:
-          pattern: cv-*-latest
+          name: cv-detailed
           path: release-files/
       
-      - name:  Create Release
-        uses: softprops/action-gh-release@v1
+      - name: Download compact CV
+        uses: actions/download-artifact@v4
         with:
+          name: cv-compact
+          path: release-files/
+      
+      - name: Generate version number
+        id: version
+        run: |
+          DATE=$(date +%Y.%m.%d)
+          SHORT_SHA=$(git rev-parse --short HEAD)
+          VERSION="${DATE}-${SHORT_SHA}"
+          echo "version=$VERSION" >> $GITHUB_OUTPUT
+          echo "date=$DATE" >> $GITHUB_OUTPUT
+      
+      - name: Create Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: v${{ steps.version.outputs.version }}
+          name: CV Release ${{ steps.version.outputs.date }}
           files: |
-            release-files/**/*.pdf
+            release-files/*.pdf
           body: |
-            ## CV Release ${{ github.ref_name }}
+            ## 📄 CV Release - ${{ steps.version.outputs.date }}
             
-            This release includes both detailed and compact versions of the CV.
+            **Generated CVs ready for download:**
+            - 📘 **Detailed CV** - Complete work history and comprehensive details
+            - 📙 **Compact CV** - Condensed version optimized for quick review
             
-            📄 **Files included:**
-            - Detailed CV
-            - Compact CV
+            ---
             
-            Generated from commit: ${{ github.sha }}
+            **Version Information:**
+            - Date: ${{ steps.version.outputs.date }}
+            - Commit: ${{ github.sha }}
+            - Branch: ${{ github.ref_name }}
+            
+            **Files included:**
+            - `Annurdien_Rasyid_CV_detailed.pdf`
+            - `Annurdien_Rasyid_CV_compact.pdf`
+          draft: false
+          prerelease: false
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
