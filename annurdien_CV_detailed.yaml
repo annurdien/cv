@@ -261,7 +261,7 @@ cv:
           - 'Provided mentoring and code review for student projects'
 
 design:
-  theme: classic
+  theme: engineeringresumes
   page: 
     size: us-letter
     show_footer: true

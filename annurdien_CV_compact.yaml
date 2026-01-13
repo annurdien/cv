@@ -129,7 +129,7 @@ cv:
         details: XCTest, XCUITest, Unit Testing, UI Testing, Integration Testing
 
 design:
-  theme: classic
+  theme: engineeringresumes
   page:
     size: us-letter
     show_footer:  true
