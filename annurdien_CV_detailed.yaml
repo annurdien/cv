@@ -23,11 +23,33 @@ cv:
         start_date: 2025-01
         end_date: present
         highlights: 
-          - 'Developed and maintained enterprise banking application serving 100,000+ active users with high security and compliance standards'
+          - 'Developed and maintained enterprise banking application (Danamon) serving 100,000+ active users with high security and compliance standards'
           - 'Led iOS app delivery and release management, ensuring high-quality production deployments with zero critical incidents'
           - 'Architected and maintained robust CI/CD pipeline with 4 environment configurations (Development, QA, Staging, Production) to streamline development lifecycle and reduce deployment time by 60%'
           - 'Implemented comprehensive automated testing strategy (unit, integration, and UI tests) ensuring 85%+ code coverage'
           - 'Collaborated with backend and QA teams to ensure seamless API integration and optimal user experience'
+
+      - company: Universitas Nahdatul Ulama (Freelance)
+        position: Mobile Apps Engineer
+        location: Remote
+        start_data: 2025-03
+        end_date: present
+        highlights:
+          - 'Engineered and optimized the university’s primary mobile ecosystem, supporting daily operations for the entire student body and faculty'
+          - 'Architected the mobile infrastructure from the ground up, leading R&D initiatives to integrate modern design patterns and scalable features'
+          - 'Owned technical decision making for the mobile stack, ensuring code maintainability and high performance standards across the platform'
+          - 'Automated deployment workflows by maintaining and enhancing CI/CD pipelines, reducing manual overhead and accelerating release cycles'
+
+      - company: Catalyst Program - Apple Developer Academy Indonesia
+        position: iOS Engineer (Intern)
+        location: Remote
+        start_date: 2025-03
+        end_date: 2025-09
+        highlights: 
+          - 'Selected as one of 30 participants from a competitive pool of 1,200+ applicants for the prestigious Catalyst Program by Apple Developer Academy Indonesia'
+          - 'Collaborated in cross-functional teams to ideate, design, and prototype innovative iOS applications addressing real-world problems'
+          - 'Presented project pitches to panels of industry experts, receiving constructive feedback and mentorship to refine app concepts'
+          - 'Gained hands-on experience with Apple Human Interface Guidelines and App Store submission process'
 
       - company:  Apple Developer Academy
         position: iOS Developer (Intern)
@@ -43,7 +65,7 @@ cv:
           - 'Implemented advanced SwiftUI animations and transitions, enhancing user engagement metrics by 25%'
           - 'Conducted code reviews and mentored junior developers on Swift best practices and iOS design patterns'
 
-      - company:  Rectmedia
+      - company:  Rectmedia (Contract)
         position: Mobile Engineer
         location: Semarang, Indonesia
         start_date: 2023-09
@@ -83,7 +105,7 @@ cv:
           - 'Collaborated with backend team to implement secure API communication using SSL pinning and certificate validation'
           - 'Optimized app security scoring to pass penetration testing requirements'
 
-      - company: Frday. id
+      - company: Frday. id (Contract)
         position: Mobile Engineer
         location: Jakarta, Indonesia
         start_date: 2022-02
@@ -98,7 +120,7 @@ cv:
           - 'Optimized API calls and implemented caching strategies, reducing data consumption by 45%'
 
     Education:
-      - institution: Yogyakarta State University
+      - institution: Universitas Negeri Yogyakarta
         area: Computer Engineering
         degree:  Bachelor of Computer Engineering
         start_date: 2019-08
@@ -135,15 +157,6 @@ cv:
           - 'Designed custom UI components and animations for intuitive pattern visualization'
           - 'Technologies: Swift, SwiftUI, Core Data, CloudKit, Combine, OpenAI API'
         url: https://apps.apple.com/app/kagibari
-
-      - name:  Valida.id - Digital Signature App
-        date: 2022-10 - 2023-01
-        highlights:
-          - 'Cross-platform digital signature application with 10,000+ downloads on App Store and Play Store'
-          - 'Implemented secure document signing with RSA/AES encryption and biometric authentication'
-          - 'Built compliance features for Indonesian legal digital signature standards'
-          - 'Technologies: Flutter, Dart, Cryptography, Biometric APIs, REST APIs'
-        url: https://valida.id
 
       - name: Open Source Contributions
         date: 2022 - present
@@ -208,38 +221,27 @@ cv:
       - label: Cloud & DevOps
         details: Firebase (Auth, Firestore, Storage, Analytics, Crashlytics), Google Cloud Platform, AWS (S3, Lambda), Docker, Kubernetes, Vercel, Cloudflare
 
-      - label: Design & UI/UX
-        details: Figma, Sketch, Adobe XD, Auto Layout, Responsive Design, Accessibility (VoiceOver), Dark Mode
-
       - label: Other Technologies
         details: Node.js, Express, Next.js, React, WebRTC, Socket.io, Machine Learning (Core ML, TensorFlow Lite)
 
       - label: Soft Skills
-        details: Team Leadership, Code Review, Mentoring, Agile/Scrum, Technical Documentation, Problem Solving, Cross-functional Collaboration
+        details: Team Leadership, Code Review, Mentoring, Agile/Scrum, Technical Documentation, Problem Solving, Cross functional Collaboration
 
     Certifications: 
       - label: Apple Developer Academy Graduate
         details: 2024-12 - Completed intensive 10-month program focused on iOS development, design thinking, and entrepreneurship
 
-      - label: AWS Certified Cloud Practitioner
-        details: 2023-08 - Foundational understanding of AWS Cloud services and architecture
-
-      - label: Google Associate Android Developer (Flutter Track)
-        details: 2022-11 - Demonstrated proficiency in building and deploying Android applications using Flutter
-
     Honors & Awards:
-      - 'Magna Cum Laude - Bachelor of Computer Engineering (GPA: 3.87/4.0) - 2023'
-      - 'Best Presenter Award - 7th International Conference on Science and Technology (ICST) 2021'
-      - 'Dean''s List - Yogyakarta State University (2019-2023)'
+      - 'Beasiswa Unggulan Awardee - Indonesian Ministry of Education and Culture (2020-2023)'
       - 'Apple Developer Academy Scholarship Recipient - 2024'
 
     Languages:
       - label: Indonesian
         details: Native
       - label: English
-        details:  Professional Working Proficiency
-      - label: Japanese
-        details: Basic (JLPT N5 equivalent)
+        details: Professional Working Proficiency
+      - label: Javanese
+        details: Native
 
     Volunteer Experience:
       - company: iOS Developer Community Indonesia
@@ -251,14 +253,15 @@ cv:
           - 'Active member sharing knowledge and helping fellow iOS developers'
           - 'Conducted workshops on SwiftUI and modern iOS development practices'
 
-      - company: Yogyakarta State University
-        position: Teaching Assistant - Mobile Programming
+      - company: Infinite UNY
+        position: Lead
         location: Yogyakarta, Indonesia
         start_date: 2021-09
         end_date: 2022-06
         highlights:
-          - 'Assisted professor in teaching Android and iOS development to 60+ students'
-          - 'Provided mentoring and code review for student projects'
+          - 'Lead biggest IT community in Universitas Negeri Yogyakarta with 120+ members'
+          - 'Organized tech talks, coding bootcamps, and hackathons to foster learning and collaboration among students'
+          - 'Mentored junior members on technical skills and career development'
 
 design:
   theme: engineeringresumes
