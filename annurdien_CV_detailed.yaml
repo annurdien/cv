@@ -264,15 +264,7 @@ cv:
           - 'Mentored junior members on technical skills and career development'
 
 design:
-  theme: engineeringresumes
+  theme: engineeringclassic
   page: 
     size: us-letter
     show_footer: true
-  colors:
-    name: rgb(0, 79, 144)
-    section_titles: rgb(0, 79, 144)
-    links: rgb(0, 79, 144)
-    connections: rgb(100, 100, 100)
-  typography:
-    font_family: Source Sans 3
-    alignment: justified
